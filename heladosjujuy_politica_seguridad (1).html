@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Helados Jujuy - Política de seguridad informática</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600&family=Nunito:wght@400;600;800&display=swap">
+<style>
+:root{--ink:#2b2140;--soft:#675d80;--pink:#e0508f;--pink-l:#ffe3ef;--lilac:#8a69d6;--lilac-l:#ece5ff;--sky:#4fb3e8;--sky-l:#dff3fd;--bg:#fff8fc;--card:#fff;--line:#f0d9e8}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:70px}
+body{margin:0;font-family:Nunito,system-ui,sans-serif;color:var(--ink);background:var(--bg);line-height:1.55;font-size:16px}
+h1,h2,h3{font-family:Fredoka,Nunito,sans-serif;margin:0;line-height:1.2}
+.hero{background:linear-gradient(135deg,var(--lilac-l),var(--sky-l) 75%,var(--pink-l));padding:48px 20px 40px;text-align:center}
+.hero h1{font-size:clamp(2.4rem,8vw,4rem);color:var(--lilac)}
+.hero p{max-width:560px;margin:12px auto 0;color:var(--soft);font-size:1.1rem}
+nav{position:sticky;top:0;z-index:5;background:#fffffff2;border-bottom:1px solid var(--line);display:flex;gap:8px;overflow-x:auto;padding:10px 16px}
+nav a{white-space:nowrap;text-decoration:none;color:var(--lilac);font-weight:800;font-size:.9rem;padding:6px 14px;border-radius:99px;background:var(--lilac-l)}
+nav a:hover,nav a:focus-visible{background:var(--lilac);color:#fff;outline:none}
+main{max-width:960px;margin:0 auto;padding:8px 16px 48px}
+section{margin-top:40px}
+h2{font-size:1.8rem;color:var(--lilac)}
+.lead{color:var(--soft);margin:6px 0 18px}
+.grid{display:grid;gap:14px;grid-template-columns:repeat(auto-fit,minmax(280px,1fr))}
+.card{background:var(--card);border:1px solid var(--line);border-top:5px solid var(--c,var(--lilac));border-radius:14px;padding:16px 18px}
+.card h3{font-size:1.2rem;color:var(--c,var(--lilac));margin-bottom:8px}
+ul{margin:0;padding-left:18px}
+li{margin:5px 0}
+.p{--c:#3f74d9}.l{--c:var(--lilac)}.s{--c:var(--sky)}
+.s h3{color:#1f86bd}
+table{width:100%;border-collapse:collapse;font-size:.92rem;min-width:640px}
+.wrap{overflow-x:auto;background:var(--card);border:1px solid var(--line);border-radius:14px}
+th{background:var(--lilac-l);text-align:left;padding:10px;color:var(--ink)}
+td{padding:10px;border-top:1px solid var(--line);vertical-align:top}
+.tag{display:inline-block;padding:2px 10px;border-radius:99px;font-weight:800;font-size:.82rem;margin:1px 0}
+.alta{background:var(--pink-l);color:#b3235f}.media{background:var(--lilac-l);color:#5b3bb0}.baja{background:var(--sky-l);color:#16709f}
+.five{counter-reset:n}
+details{background:var(--card);border:1px solid var(--line);border-left:6px solid var(--c);border-radius:14px;margin:12px 0}
+summary{cursor:pointer;padding:16px 18px;list-style:none;display:flex;flex-direction:column;gap:2px}
+summary::-webkit-details-marker{display:none}
+summary b{font-family:Fredoka,sans-serif;font-size:1.25rem;color:var(--c)}
+summary span{color:var(--soft)}
+summary::after{content:"Tocar para ver el detalle";font-size:.8rem;font-weight:800;color:var(--c);margin-top:4px}
+details[open] summary::after{content:"Tocar para cerrar"}
+.in{padding:0 18px 18px;display:grid;gap:12px;grid-template-columns:repeat(auto-fit,minmax(260px,1fr))}
+.box{background:var(--bg);border-radius:10px;padding:12px 14px}
+.box h4{margin:0 0 4px;font-family:Fredoka,sans-serif;font-size:1.02rem;color:var(--c)}
+.box.wide{grid-column:1/-1}
+.rule{background:var(--c);color:#fff;border-radius:10px;padding:10px 14px;font-weight:800;grid-column:1/-1}
+footer{text-align:center;color:var(--soft);padding:24px;border-top:1px solid var(--line);font-size:.9rem}
+</style>
+</head>
+<body>
+<header class="hero">
+<h1>Helados Jujuy</h1>
+<p>Política de seguridad informática: qué cuidamos, de qué nos cuidamos y qué reglas seguimos todos.</p>
+</header>
+<nav>
+<a href="#activos">Activos</a><a href="#amenazas">Amenazas</a><a href="#riesgos">Riesgos</a><a href="#usuarios">Usuarios</a><a href="#necesidades">Requisitos</a><a href="#politicas">Políticas</a>
+</nav>
+<main>
+
+<section id="activos">
+<h2>1. Identificación de activos e información sensible</h2>
+<p class="lead">Inventario de lo que debe protegerse y de los datos que requieren tratamiento especial.</p>
+<div class="grid">
+<div class="card p"><h3>Inventario de activos</h3><ul>
+<li>Sistema de pedidos y sus 4 almacenes de datos: clientes, detalle, pedidos y cobros</li>
+<li>Computadora de caja e impresora de tickets</li>
+<li>Router, Wi-Fi e internet</li>
+<li>Recetas, costos y listas de precios</li>
+<li>Caja y recaudación diaria (efectivo y electrónica)</li>
+<li>WhatsApp, correo y redes sociales</li>
+<li>Copias de seguridad</li>
+<li>Equipos de producción y frío (si fallan, se pierde mercadería)</li>
+<li>Reputación y confianza de los clientes</li></ul></div>
+<div class="card l"><h3>Clasificación de información sensible</h3><ul>
+<li>Datos de clientes: nombre, teléfono, dirección</li>
+<li><b>Alergias y restricciones alimentarias</b> (son datos de salud, requieren cuidado especial)</li>
+<li>Historial de pedidos y preferencias</li>
+<li>Datos de cobro y comprobantes</li>
+<li>Usuarios y contraseñas</li>
+<li>Recetas, costos, márgenes y precios de mayoristas</li>
+<li>Datos de empleados y proveedores (CUIL, CBU, horarios)</li></ul></div>
+</div>
+</section>
+
+<section id="amenazas">
+<h2>2. Análisis de amenazas y vulnerabilidades</h2>
+<p class="lead">Eventos que pueden afectar los activos y debilidades actuales que los facilitan.</p>
+<div class="grid">
+<div class="card s"><h3>Amenazas</h3><ul>
+<li><b>Robo de credenciales</b>, por ejemplo una contraseña compartida</li>
+<li><b>Fraude interno:</b> cancelar un pedido ya cobrado y quedarse con el dinero</li>
+<li><b>Errores humanos:</b> cargar mal un pedido o enviar un ticket a otro cliente</li>
+<li><b>Phishing</b> por correo o WhatsApp (falsos comprobantes o proveedores)</li>
+<li><b>Malware y ransomware</b> que cifre la computadora de caja</li>
+<li>Filtración de datos de clientes</li>
+<li>Falla del sistema o del hardware</li>
+<li>Cortes de luz o internet en hora pico</li>
+<li>Robo o daño físico de equipos o dinero</li>
+<li>Pérdida del teléfono del encargado</li></ul></div>
+<div class="card p"><h3>Vulnerabilidades</h3><ul>
+<li>Un solo rol: cualquiera puede modificar y cancelar pedidos</li>
+<li>Contraseñas compartidas o débiles, sin MFA</li>
+<li>No queda registro de quién modificó o canceló</li>
+<li>Copias de seguridad ausentes, sin probar o sin guardar fuera del local</li>
+<li>Caja con antivirus y sistema desactualizados, usada para tareas personales</li>
+<li>Pedidos y datos en WhatsApp personal y cuadernos</li>
+<li>Personal sin capacitación</li>
+<li>Sin UPS ni plan si el sistema se cae</li>
+<li>Un único Wi-Fi compartido con clientes y celulares personales</li></ul></div>
+</div>
+</section>
+
+<section id="riesgos">
+<h2>3. Matriz de evaluación de riesgos</h2>
+<p class="lead">Cada fila relaciona activo, amenaza y vulnerabilidad. Valoración: probabilidad / impacto.</p>
+<div class="wrap"><table>
+<tr><th>Activo</th><th>Amenaza</th><th>Vulnerabilidad</th><th>Riesgo resultante</th><th>Probabilidad / Impacto</th></tr>
+<tr><td>Cobros y pedidos</td><td>Fraude interno</td><td>Cualquiera puede cancelar y no hay registro</td><td>Se pierde dinero y no se sabe quién fue</td><td><span class="tag media">Media</span> / <span class="tag alta">Alta</span></td></tr>
+<tr><td>Cuenta del sistema</td><td>Robo de credenciales</td><td>Clave compartida, sin MFA</td><td>Operaciones que no se pueden atribuir a nadie</td><td><span class="tag alta">Alta</span> / <span class="tag media">Media</span></td></tr>
+<tr><td>Base de clientes</td><td>Filtración de datos</td><td>Datos en WhatsApp personal y papel</td><td>Datos personales y de salud expuestos; reclamo por la Ley 25.326</td><td><span class="tag media">Media</span> / <span class="tag alta">Alta</span></td></tr>
+<tr><td>Sistema de pedidos</td><td>Ransomware o falla de disco</td><td>Sin copias probadas ni fuera del local</td><td>Se pierden todos los encargos en temporada alta</td><td><span class="tag baja">Baja</span> / <span class="tag alta">Alta</span></td></tr>
+<tr><td>Atención en mostrador</td><td>Corte de luz o internet</td><td>Sin UPS ni plan manual</td><td>No se puede cobrar ni imprimir tickets</td><td><span class="tag media">Media</span> / <span class="tag media">Media</span></td></tr>
+<tr><td>WhatsApp y correo</td><td>Phishing</td><td>Personal sin capacitación</td><td>Robo de cuenta o pago a un falso proveedor</td><td><span class="tag media">Media</span> / <span class="tag media">Media</span></td></tr>
+</table></div>
+</section>
+
+<section id="usuarios">
+<h2>4. Perfiles de usuario y niveles de acceso</h2>
+<div class="grid">
+<div class="card p"><h3>Rol: Mostrador</h3>Busca clientes, carga pedidos, cobra e imprime tickets.</div>
+<div class="card l"><h3>Rol: Encargado (administrador)</h3>Autoriza modificaciones y cancelaciones; administra usuarios y permisos.</div>
+<div class="card s"><h3>Rol: Producción</h3>Consulta el detalle de los pedidos para producir. No necesita ver cobros.</div>
+<div class="card p"><h3>Rol: Administración y contabilidad</h3>Accede a cobros y reportes para facturar y conciliar.</div>
+<div class="card l"><h3>Titulares de datos (clientes)</h3>No entran al sistema, pero entregan sus datos y confían en que se cuiden.</div>
+<div class="card s"><h3>Terceros y proveedores</h3>Soporte técnico, proveedor de internet y servicio de reparto.</div>
+</div>
+</section>
+
+<section id="necesidades">
+<h2>5. Requisitos y principios de seguridad</h2>
+<div class="grid">
+<div class="card p"><h3>Confidencialidad</h3>Solo personal autorizado ve datos de clientes, alergias y cobros.</div>
+<div class="card l"><h3>Integridad</h3>Un pedido cobrado no se altera ni se borra sin dejar rastro.</div>
+<div class="card s"><h3>Disponibilidad</h3>El sistema funciona en horario comercial y fechas pico.</div>
+<div class="card p"><h3>Trazabilidad</h3>Se sabe qué usuario hizo cada operación.</div>
+<div class="card l"><h3>Mínimo privilegio</h3>Cada rol accede solo a lo que necesita.</div>
+<div class="card s"><h3>Continuidad</h3>Se puede seguir vendiendo, aunque sea a mano, si el sistema cae.</div>
+<div class="card p"><h3>Cumplimiento legal</h3>Ley 25.326 de Protección de Datos Personales y facturación electrónica ante ARCA.</div>
+<div class="card l"><h3>Concientización</h3>El personal conoce las reglas y avisa de lo sospechoso.</div>
+</div>
+</section>
+
+<section id="politicas" class="five">
+<h2>6. Políticas de seguridad de la información</h2>
+<p class="lead">Cada política se despliega con: objetivo, alcance, responsables, reglas, controles, procedimiento ante incumplimientos y mecanismo de revisión.</p>
+
+<details class="p" style="--c:#3f74d9" open><summary><b>Política 1: Autenticación y control de acceso</b><span>Cada operación la hace una persona identificada y autorizada.</span></summary><div class="in">
+<div class="box"><h4>Objetivo</h4>Que registrar, cobrar, modificar o cancelar un pedido lo haga siempre alguien identificado.</div>
+<div class="box"><h4>Alcance</h4>Sistema de pedidos, computadora de caja, correo y WhatsApp del negocio. Todo el personal y el soporte externo.</div>
+<div class="box"><h4>Responsables</h4><ul><li>Encargado: altas, bajas, roles y excepciones</li><li>Empleados: cuidan sus claves</li><li>Soporte: configura los controles</li></ul></div>
+<div class="box"><h4>Reglas</h4><ul><li>Las claves son personales y no se comparten</li><li>Un usuario por persona, con el rol mínimo</li><li>Modificar o cancelar un pedido cobrado requiere al encargado</li><li>Claves de 12 caracteres o más, sin reutilizar</li><li>Altas, cambios y bajas de acceso el mismo día</li></ul></div>
+<div class="box"><h4>Controles</h4><ul><li>Preventivos: roles separados, MFA, bloqueo por intentos fallidos</li><li>Detectivos: registro de cada operación y revisión semanal de cancelaciones</li><li>Correctivos: bloqueo y cambio de clave ante sospecha</li></ul></div>
+<div class="box"><h4>Procedimiento ante incumplimientos</h4><ul><li>Clave compartida: advertencia escrita y cambio de clave</li><li>Cancelación sin permiso: se revierte y se sanciona</li><li>Fraude comprobado: suspensión, registro y denuncia si corresponde</li></ul></div>
+<div class="box wide"><h4>Mecanismo de revisión</h4>Trimestral de usuarios, roles y cancelaciones. Anual de la política, o antes si cambia el sistema o el personal.</div>
+</div></details>
+
+<details class="l" style="--c:var(--lilac)"><summary><b>Política 2: Protección de datos personales de clientes</b><span>Se piden pocos datos y se cuidan mucho, sobre todo las alergias.</span></summary><div class="in">
+<div class="box"><h4>Objetivo</h4>Proteger los datos de clientes, en especial los de salud, y cumplir la Ley 25.326.</div>
+<div class="box"><h4>Alcance</h4>Datos de clientes en el sistema, WhatsApp, papel y copias de seguridad.</div>
+<div class="box"><h4>Responsables</h4><ul><li>Encargado: base de datos y pedidos de los titulares</li><li>Mostrador: confidencialidad</li><li>Administración: resguarda comprobantes</li></ul></div>
+<div class="box"><h4>Reglas</h4><ul><li>Solo se piden los datos necesarios</li><li>Se informa para qué se usan y se pide consentimiento</li><li>Las alergias se usan solo para producir y entregar bien</li><li>Información pública, interna, confidencial o restringida</li><li>Prohibido fotografiar pantallas o guardar la lista de clientes en celulares personales</li><li>Los pedidos de WhatsApp se cargan en el sistema</li></ul></div>
+<div class="box"><h4>Controles</h4><ul><li>Preventivos: acceso restringido, bloqueo de pantalla, trituradora de papel</li><li>Detectivos: registro de consultas y exportaciones</li><li>Correctivos: aviso a afectados y cambio de claves</li></ul></div>
+<div class="box"><h4>Procedimiento ante incumplimientos</h4><ul><li>Divulgar datos: advertencia o sanción según gravedad</li><li>Cliente que pide ver o borrar sus datos: el encargado responde en los plazos legales</li><li>Filtración: se aplica la Política 5</li></ul></div>
+<div class="box wide"><h4>Mecanismo de revisión</h4>Semestral de qué datos se guardan y quién accede. Anual de la política y de su ajuste a la Ley 25.326.</div>
+</div></details>
+
+<details class="s" style="--c:#2f9bd3"><summary><b>Política 3: Copias de seguridad y continuidad</b><span>Si algo falla, recuperamos los datos y seguimos vendiendo.</span></summary><div class="in">
+<div class="box"><h4>Objetivo</h4>Recuperar pedidos, clientes y cobros ante una falla, ataque o corte, con la menor interrupción.</div>
+<div class="box"><h4>Alcance</h4>Los 4 almacenes de datos, la computadora de caja, la impresora e internet.</div>
+<div class="box"><h4>Responsables</h4><ul><li>Soporte: configura y prueba las copias</li><li>Encargado: controla y decide cómo operar en una caída</li><li>Mostrador: usa el procedimiento manual</li></ul></div>
+<div class="box"><h4>Reglas</h4><ul><li>Copia automática al cierre; en fechas pico, también al mediodía</li><li>Tres copias: en la computadora, en un disco externo y en la nube</li><li>Se guardan 90 días y cifradas</li><li>Una copia sin probar no cuenta: restauración de prueba cada trimestre</li><li>Si cae el sistema, pedidos en talonario numerado y carga posterior</li></ul></div>
+<div class="box"><h4>Controles</h4><ul><li>Preventivos: copias automáticas, UPS, antivirus al día</li><li>Detectivos: aviso por correo si falla una copia y revisión semanal</li><li>Correctivos: restaurar la última copia sana, talonario y datos del celular si cae internet</li></ul></div>
+<div class="box"><h4>Procedimiento ante incumplimientos</h4><ul><li>Copia fallida: se repite el mismo día y se anota la causa</li><li>Falla una prueba: se trata como incidente</li><li>Omisión repetida: advertencia escrita y cambio de responsable</li></ul></div>
+<div class="box wide"><h4>Mecanismo de revisión</h4>Informe trimestral de copias y pruebas. Simulacro anual de caída del sistema. Revisión anual de la política.</div>
+</div></details>
+
+<details class="p" style="--c:#3f74d9"><summary><b>Política 4: Uso aceptable de equipos y comunicaciones</b><span>Los equipos y canales del negocio no deben ser una puerta de entrada.</span></summary><div class="in">
+<div class="box"><h4>Objetivo</h4>Usar equipos y canales de forma segura para evitar malware, estafas y filtraciones.</div>
+<div class="box"><h4>Alcance</h4>Caja, notebooks, celulares (incluso personales), correo, WhatsApp del negocio, Wi-Fi y pendrives.</div>
+<div class="box"><h4>Responsables</h4><ul><li>Encargado: autoriza dispositivos y software</li><li>Soporte: mantiene equipos actualizados</li><li>Todos: cumplen y reportan lo sospechoso</li></ul></div>
+<div class="box"><h4>Reglas</h4><ul><li>La caja es solo para el sistema: no se navega, no se instalan programas ni pendrives ajenos</li><li>Se verifica el remitente antes de abrir adjuntos o enlaces</li><li>Las transferencias se confirman en la app del banco, no solo con la captura</li><li>Celular personal con acceso al negocio: bloqueo de pantalla, actualizado y borrable a distancia</li><li>Wi-Fi de clientes separado del de la caja</li></ul></div>
+<div class="box"><h4>Controles</h4><ul><li>Preventivos: antivirus, actualizaciones, usuario sin permisos de administrador, Wi-Fi de invitados, MFA</li><li>Detectivos: revisión mensual de programas y equipos conectados</li><li>Correctivos: borrado remoto y cambio de claves</li></ul></div>
+<div class="box"><h4>Procedimiento ante incumplimientos</h4><ul><li>Software o pendrive no autorizado: se elimina, se analiza el equipo y se advierte</li><li>Caer en un engaño: reportarlo no se sanciona, ocultarlo sí</li><li>Reincidencia: sanción según el reglamento interno</li></ul></div>
+<div class="box wide"><h4>Mecanismo de revisión</h4>Capacitación al ingresar y dos veces al año, con ejemplos reales de phishing. Revisión anual de la política.</div>
+</div></details>
+
+<details class="l" style="--c:var(--lilac)"><summary><b>Política 5: Gestión de incidentes de seguridad</b><span>Si pasa algo, se avisa rápido, se contiene y se aprende.</span></summary><div class="in">
+<div class="box"><h4>Objetivo</h4>Detectar rápido, contener y resolver cualquier incidente (robo de credenciales, fraude, malware, pérdida de datos o de un dispositivo) y aprender de él.</div>
+<div class="box"><h4>Alcance</h4>Todo el personal y todos los sistemas, equipos y cuentas, incluido el soporte externo.</div>
+<div class="box"><h4>Responsables</h4><ul><li>Encargado: dirige la respuesta y comunica a clientes</li><li>Soporte: aísla, analiza y recupera</li><li>Todos: avisan de inmediato</li></ul></div>
+<div class="box"><h4>Reglas</h4><ul><li>Todo incidente se avisa al encargado dentro de la hora de detectado</li><li>No se apaga ni borra nada antes de que lo vea soporte</li><li>Se registra fecha, qué pasó, qué se hizo y quién intervino</li><li>Etapas: detectar, registrar, analizar, contener, erradicar, recuperar, documentar y mejorar</li></ul></div>
+<div class="box"><h4>Controles</h4><ul><li>Preventivos: capacitación y simulacros de phishing</li><li>Detectivos: alertas del antivirus, registros del sistema, diferencias de caja</li><li>Correctivos: restaurar copia, bloquear cuentas, cambiar claves</li></ul></div>
+<div class="box"><h4>Procedimiento ante incumplimientos</h4><ul><li>Esconder un incidente: sanción, más grave si hubo daño</li><li>Datos personales afectados: se avisa a los clientes y se registra para la autoridad de control (AAIP)</li><li>Tras cada incidente, revisión sin culpar a nadie</li></ul></div>
+<div class="box wide"><h4>Mecanismo de revisión</h4>Informe posterior a cada incidente con causa y mejoras. Revisión anual de la política y un simulacro.</div>
+</div></details>
+</section>
+</main>
+<footer>Helados Jujuy. Trabajo práctico de Seguridad informática.</footer>
+</body>
+</html>
